@@ -1,0 +1,183 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Modern Dark Mode with Vibrant Accents */
+:root {
+  --primary: #F59E0B;  /* Amber */
+  --secondary: #F59E0B;  /* Amber */
+  --accent: #F59E0B;  /* Amber */
+  --background: #393830;  /* Deep blue-black */
+  --card-bg: #000000;  /* Slate */
+  --text-primary: #F8FAFC;  /* Slate 50 */
+  --text-secondary: #94A3B8;  /* Slate 400 */
+  --border-color: #334155;  /* Slate 700 */
+  --gradient-start: #F59E0B;
+  --gradient-end: #F59E0B;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  --card-bg: var(--card-bg);
+  --text-color: var(--text-primary);
+  --border-color: var(--border-color);
+  --icon-bg: var(--primary);
+  --icon-color: var(--text-primary);
+}
+
+/* Light Mode */
+body.light {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  --card-bg: #FFFFFF;
+  --text-color: #0F172A;
+  --border-color: #E2E8F0;
+  --icon-bg: var(--primary);
+  --icon-color: #FFFFFF;
+}
+
+.vertical-timeline-element-content {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.vertical-timeline-element-icon {
+  background-color: var(--icon-bg);
+  color: var(--icon-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+a:hover::after,
+a:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--text-color);
+    background: var(--card-bg);
+  }
+}
+
+.divTable {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+}
+
+.divTableRow {
+  display: table-row;
+}
+
+.divTableCell, .divTableHead {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.divTableHeading {
+  background-color: var(--card-bg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.divTableRow:hover .divTableCell {
+  background-color: rgba(124, 58, 237, 0.1);
+}
+
+@import 'highlight.js/styles/atom-one-dark.css';
+
+pre {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.hljs-keyword { color: #C084FC; }  /* Purple */
+.hljs-string { color: #34D399; }   /* Green */
+.hljs-number { color: #FBBF24; }   /* Yellow */
+.hljs-comment { color: #94A3B8; }  /* Gray */
+.hljs-variable { color: #F87171; } /* Red */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: var(--card-bg);
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  position: relative;
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--accent);
+}
