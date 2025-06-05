@@ -12,6 +12,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 3rem;
+    background-color: var(--background);
 }
 
 .title {
@@ -43,7 +44,7 @@
 }
 
 .backlink {
-    color: #b200f3;
+    color: var(--accent);
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -53,17 +54,18 @@
 /* Tooltip styling */
 .tooltip {
     position: absolute;
-    left: 50%;
+    left: 78%;
     top: -40px;
     transform: translateX(-50%);
     background: var(--card-bg);
     color: var(--text-primary);
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
+    font-stretch: 150%;
     white-space: nowrap;
-    opacity: 0;
+    opacity: 0.5;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border: 1px solid var(--border-color);
@@ -152,13 +154,13 @@
 /* Left-align lists and ensure proper indentation */
 .listContainer ul, .listContainer ol {
     text-align: left;
-    margin-left: 2rem;  /* Provides space for list indentation */
+    margin-left: 2rem;
     padding-left: 1rem;
 }
 
 .listContainer li {
     margin-bottom: 0.5rem;
-    color: #333;
+    color: var(--text-secondary);
 }
 
 @media (max-width: 768px) {
@@ -187,43 +189,48 @@
     }
 
     .tooltip {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 0.5rem 1rem;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    .main, .card {
-        background-color: #242424;
-        color: #e5e5e5;
+    .main {
+        background-color: var(--background);
+        color: var(--text-primary);
+    }
+
+    .card {
+        background-color: var(--card-bg);
+        color: var(--text-primary);
     }
 
     .footer {
-        background-color: #181818;
-        border-top-color: #333;
+        background-color: var(--card-bg);
+        border-top-color: var(--border-color);
     }
 
     .card:hover {
-        background-color: #333;
+        background-color: rgba(255, 255, 255, 0.08);
     }
 
     .card h2 {
-        color: #f0f0f0;  /* Higher contrast for dark mode */
+        color: var(--text-primary);
     }
 
     .title {
-        color: #e5e5e5;
+        color: var(--text-primary);
     }
 
     .description {
-        color: #aaa;
+        color: var(--text-secondary);
     }
 
     .listContainer ul, .listContainer ol {
-        color: #e5e5e5;
+        color: var(--text-primary);
     }
 
     .listContainer li {
-        color: #ccc;
+        color: var(--text-secondary);
     }
 }

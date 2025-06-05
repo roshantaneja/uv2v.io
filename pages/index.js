@@ -29,24 +29,19 @@ export default function Home() {
 
     <h2 className={styles.title}>Featured Projects</h2>
     <div className={styles.grid}>
+      <a href="/about" className={styles.card}>
+        <h2>More About Me &rarr;</h2>
+        <p>Learn about my achievements, leadership roles, and academic journey.</p>
+      </a>
+
       <a href="/blog" className={styles.card}>
         <h2>My Blog &rarr;</h2>
         <p>Sharing insights on technology, humanitarian work, and my experiences.</p>
       </a>
 
-      <a href="/tanzania" className={styles.card}>
-        <h2>Maji Wells Water Programs &rarr;</h2>
-        <p>Leading water accessibility initiatives in Tanzania, deploying 100+ rainwater harvesting units.</p>
-      </a>
-
       <a href="https://github.com/yuvrajy" target="_blank" rel="noopener noreferrer" className={styles.card}>
         <h2>My Github &rarr;</h2>
         <p>Check out my projects in machine learning, robotics, and more!</p>
-      </a>
-
-      <a href="/about" className={styles.card}>
-        <h2>More About Me &rarr;</h2>
-        <p>Learn about my achievements, leadership roles, and academic journey.</p>
       </a>
     </div>
 
