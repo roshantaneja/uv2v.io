@@ -20,28 +20,39 @@ export default function Home() {
     </h1>
 
     <p className={styles.description}>
-      I'm a junior at Sacred Heart Preparatory, passionate about technology, robotics, and humanitarian work. With a GPA of 4.14, I'm deeply involved in computer science, machine learning, and water accessibility projects.
+      I'm a senior at Sacred Heart Preparatory, passionate about technology, robotics, and humanitarian work. With a GPA of 4.14, I'm deeply involved in computer science, machine learning, and water accessibility projects.
     </p>
 
     <p className={styles.description}>
-      As Youth President of Maji Wells, I've helped reduce water collection time from 9 hours to 3 hours per day for 4500+ Maasai people in Tanzania, while also leading robotics teams and competing in water polo.
+      As Youth President of Maji Wells, I've helped reduce water collection time from 9 hours to 3 hours per day for 4500+ Maasai people in Tanzania, while also leading robotics teams and competing in <a href="https://www.maxpreps.com/ca/atherton/sacred-heart-prep-gators/water-polo/rankings/" target="_blank" rel="noopener noreferrer" style={{color: '#F59E0B'}}> Water Polo</a>.
     </p>
 
     <h2 className={styles.title}>Featured Projects</h2>
     <div className={styles.grid}>
-      <a href="/about" className={styles.card}>
-        <h2>More About Me &rarr;</h2>
-        <p>Learn about my achievements, leadership roles, and academic journey.</p>
+
+      <a href="https://github.com/yuvrajy/SomethingFishy" className={styles.card}>
+        <h2>Something Fishy Game &rarr;</h2>
+        <p>A digital recreation of the game "sounds fishy" to play with friends online!</p>
       </a>
 
-      <a href="/blog" className={styles.card}>
+      {/* <a href="/blog" className={styles.card}>
         <h2>My Blog &rarr;</h2>
         <p>Sharing insights on technology, humanitarian work, and my experiences.</p>
+      </a> */}
+
+      <a href="map.uv2v.io" className={styles.card}>
+        <h2>Interactive Rainwater Harvesting Map &rarr;</h2>
+        <p>Interactive Map of Recently Deployed Rainwater Harvesting units in Tanzania!</p>
       </a>
 
       <a href="https://github.com/yuvrajy" target="_blank" rel="noopener noreferrer" className={styles.card}>
         <h2>My Github &rarr;</h2>
         <p>Check out my projects in machine learning, robotics, and more!</p>
+      </a>
+
+      <a href="/about" className={styles.card}>
+        <h2>More About Me &rarr;</h2>
+        <p>Learn about my achievements, leadership roles, and academic journey.</p>
       </a>
     </div>
 
@@ -71,7 +82,7 @@ export default function Home() {
 
   <footer className={styles.footer}>
     Yuvraj Taneja &copy; all rights reserved. &nbsp; &nbsp;
-    <a href="https://www.github.com/yuvrajtaneja/uv2v.io" target="_blank" rel="noopener noreferrer" style={{alignSelf: 'right'}}>
+    <a href="https://www.github.com/roshantaneja/uv2v.io" target="_blank" rel="noopener noreferrer" style={{alignSelf: 'right'}}>
       Check out the code on GitHub!
     </a>
   </footer>
