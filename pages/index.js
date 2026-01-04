@@ -40,7 +40,7 @@ export default function Home() {
         <p>Sharing insights on technology, humanitarian work, and my experiences.</p>
       </a> */}
 
-      <a href="map.uv2v.io" className={styles.card}>
+      <a href="https://map.uv2v.io" className={styles.card}>
         <h2>Interactive Rainwater Harvesting Map &rarr;</h2>
         <p>Interactive Map of Recently Deployed Rainwater Harvesting units in Tanzania!</p>
       </a>
