@@ -15,7 +15,7 @@ export default function Home() {
 
   <main className={styles.main}>
     <h1 className={styles.title}>
-      Hello, I'm <a href="./resume/Yuvraj Taneja Resume.pdf" className={styles.resumeLink}>Yuvraj!</a>
+      Hello, I'm <a href="/Yuvraj Taneja CV.pdf" className={styles.resumeLink}>Yuvraj!</a>
       <span className={styles.tooltip}>Click my name for my resumé!</span>
     </h1>
 
@@ -48,11 +48,6 @@ export default function Home() {
       <a href="https://github.com/yuvrajy" target="_blank" rel="noopener noreferrer" className={styles.card}>
         <h2>My Github &rarr;</h2>
         <p>Check out my projects in machine learning, robotics, and more!</p>
-      </a>
-
-      <a href="/about" className={styles.card}>
-        <h2>More About Me &rarr;</h2>
-        <p>Learn about my achievements, leadership roles, and academic journey.</p>
       </a>
     </div>
 

@@ -8,7 +8,7 @@ export default function Custom404() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Roshan Taneja</title>
+                <title>Yuvraj Taneja</title>
                 <meta name="description" content="can i puts my bawls in yo jaws" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
