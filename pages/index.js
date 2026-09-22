@@ -9,7 +9,7 @@ export default function Home() {
 <div className={styles.container}>
   <Head>
     <title>Yuvraj Taneja</title>
-    <meta name="description" content="Junior at Sacred Heart Preparatory passionate about technology, robotics, and humanitarian work." />
+    <meta name="description" content="EECS student and Regents' Scholar at UC Berkeley passionate about technology, machine learning, and humanitarian work." />
     <link rel="icon" href="/favicon.ico" />
   </Head>
 
@@ -20,35 +20,45 @@ export default function Home() {
     </h1>
 
     <p className={styles.description}>
-      I'm a senior at Sacred Heart Preparatory, passionate about technology, robotics, and humanitarian work. With a GPA of 4.14, I'm deeply involved in computer science, machine learning, and water accessibility projects.
+      I'm an Electrical Engineering & Computer Sciences student and Regents' Scholar at UC Berkeley, passionate about technology, machine learning, and humanitarian work. I'm deeply involved in computer science, machine learning, and water accessibility projects.
     </p>
 
     <p className={styles.description}>
-      As Youth President of Maji Wells, I've helped reduce water collection time from 9 hours to 3 hours per day for 4500+ Maasai people in Tanzania, while also leading robotics teams and competing in <a href="https://www.maxpreps.com/ca/atherton/sacred-heart-prep-gators/water-polo/rankings/" target="_blank" rel="noopener noreferrer" style={{color: '#F59E0B'}}> Water Polo</a>.
+      As Youth President of Maji Wells, I've helped raise $250K and deploy 500+ rainwater harvesting units in Tanzania, cutting water-collection walks for 15,000+ Maasai people. At Sacred Heart Prep I captained the robotics program and was a 4x USA Water Polo Junior Olympian on a #2 ranked <a href="https://www.maxpreps.com/water-polo/25-26/rankings/1/" target="_blank" rel="noopener noreferrer" style={{color: '#F59E0B'}}> Water Polo</a> team.
     </p>
 
-    <h2 className={styles.title}>Featured Projects</h2>
+    <h2 className={styles.title}>Projects</h2>
     <div className={styles.grid}>
+      <a href="https://map.uv2v.io" className={styles.card}>
+        <h2>Interactive Rainwater Harvesting Map &rarr;</h2>
+        <p>Interactive Map of Recently Deployed Rainwater Harvesting units in Tanzania!</p>
+      </a>
+
+      <a href="https://github.com/yuvrajy/clausewise" target="_blank" rel="noopener noreferrer" className={styles.card}>
+        <h2>ClauseWise: Executable Contracts &rarr;</h2>
+        <p>- Grand Prize & Sharpe Section Winner, Stanford LLM x Law Hackathon 2026</p>
+        <p>- Turns legal contracts into executable state machines and translates them back to plain English</p>
+      </a>
 
       <a href="https://github.com/yuvrajy/SomethingFishy" className={styles.card}>
         <h2>Something Fishy Game &rarr;</h2>
         <p>A digital recreation of the game "sounds fishy" to play with friends online!</p>
       </a>
 
-      {/* <a href="/blog" className={styles.card}>
-        <h2>My Blog &rarr;</h2>
-        <p>Sharing insights on technology, humanitarian work, and my experiences.</p>
-      </a> */}
-
-      <a href="https://map.uv2v.io" className={styles.card}>
-        <h2>Interactive Rainwater Harvesting Map &rarr;</h2>
-        <p>Interactive Map of Recently Deployed Rainwater Harvesting units in Tanzania!</p>
-      </a>
-
       <a href="https://github.com/yuvrajy" target="_blank" rel="noopener noreferrer" className={styles.card}>
         <h2>My Github &rarr;</h2>
         <p>Check out my projects in machine learning, robotics, and more!</p>
       </a>
+
+      <a href="/about" className={styles.card}>
+        <h2>More About Me &rarr;</h2>
+        <p>Learn about my achievements, leadership roles, and academic journey.</p>
+      </a>
+
+      {/* <a href="/blog" className={styles.card}>
+        <h2>My Blog &rarr;</h2>
+        <p>Sharing insights on technology, humanitarian work, and my experiences.</p>
+      </a> */}
     </div>
 
     <h2 className={styles.title}>Publications</h2>
