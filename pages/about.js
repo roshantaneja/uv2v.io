@@ -18,21 +18,15 @@ export default function About() {
         <h1 className={styles.title}>About Me</h1>
         <section className={styles.section}>
           <p>
-            Hi, I'm Yuvraj Taneja! I'm a junior at Sacred Heart Preparatory with a passion for technology, robotics, and
-            humanitarian work. My work focuses on using machine learning and technology to solve real-world challenges,
-            particularly in water accessibility and robotics.
-          </p>
-          <p>
-            As Youth President of Maji Wells, I lead initiatives to improve water accessibility in Tanzania, while also
-            serving as a Robotics Leadership team member and Water Polo team captain at my school.
+            Hi, I'm Yuvraj Taneja! I'm a Regent's Scholar at UC Berkeley EECS with a passion for technology, robotics, and
+            humanitarian work. My work focuses on using machine learning and technology to solve real-world challenges.
           </p>
         </section>
 
         <section className={styles.section}>
           <h2>Education & Achievements</h2>
           <ul className={styles.statsList}>
-            <li><strong>School:</strong> Sacred Heart Preparatory</li>
-            <li><strong>GPA:</strong> 4.14</li>
+            <li><strong>School:</strong>UC Berkeley</li>
             <li><strong>AP Courses:</strong> Computer Science A [5], Spanish Language [4], Physics 1, Calculus BC, Microeconomics, Macroeconomics, English Language and Composition</li>
             <li><strong>Post-AP:</strong> Advanced Topics in Computer Science, Machine Learning</li>
             <li><strong>Summer Programs:</strong> Behavioral Economics @ John Hopkins University, Python for Economics @ UCLA, Remote Sensing @ MIT Beaverworks, Harvard GIS Institute</li>
